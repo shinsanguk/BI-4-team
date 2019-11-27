@@ -111,13 +111,17 @@ for i in range(len(data)):
 
 list=[]
 
-list=getRecommendation(data_dict, 1,k=5)
+list=getRecommendation(data_dict, 80,k=5)
 
 max=0
-item=""
+name=""
 for item in list:
    if item[0] >max:
        max = item[0]
        name = item[1]
-
-print(str(max)+" "+name)
+       
+#print(data_dict)
+if max!=0:
+    print(str(max)+" "+name)
+else:
+    print("데이터가 부족합니다.")
