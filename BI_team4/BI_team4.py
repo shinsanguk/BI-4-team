@@ -120,4 +120,4 @@ for item in list:
        max = item[0]
        name = item[1]
 
-print(str(item[0])+" "+item[1])
+print(str(max)+" "+name)
