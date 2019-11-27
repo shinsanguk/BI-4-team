@@ -111,7 +111,13 @@ for i in range(len(data)):
 
 list=[]
 
-list=getRecommendation(data_dict, 25,k=5)
+list=getRecommendation(data_dict, 1,k=5)
 
-for items in list:
-   print(items)
+max=0
+item=""
+for item in list:
+   if item[0] >max:
+       max = item[0]
+       name = item[1]
+
+print(str(item[0])+" "+item[1])
